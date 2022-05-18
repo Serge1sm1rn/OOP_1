@@ -1,0 +1,48 @@
+#include<iostream>
+#include <cstdint> 
+#include <cmath>
+
+using namespace std;
+
+class power
+{
+private:
+	double a = 5;
+	double b = 9;
+
+
+
+
+public:
+
+	power() {}
+
+	void set(double num1, double num2)
+	{
+
+
+		// Задание № 1
+
+
+		a = num1;
+
+		b = num2;
+
+
+	}
+	double calculate()
+	{
+		return pow(a, b);
+
+	}
+};
+	int main()
+	{
+		power Num;
+
+		Num.set(2., 3.);
+
+		cout << Num.calculate() << endl;
+		return 0;
+		
+	}
